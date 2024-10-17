@@ -24,4 +24,17 @@ This system has 3 parts: The front (user page), the back (APIs), and the databas
 ### Data Base Structure 
 ![](./EmployeeSystemPhotos/employeeSystemDB.png)
 ### Test Back in VS Code
+I have too many things to show from testing the back, but I will be trying to provide screenshots of the most important functions:
+For address localhost:3500/:
+1. Success Login (POST request)
+
+For address localhost:3500/homePage:
+1. Success Get Request (returns the employees)
+   
+3. Conflict Error (refers to PUT & POST Requests)
+   
+5. Unauthorized Error (refers to POST,  PUT,  DELETE Requests)
+   
+7. Forbidden Error (refers to all Requests)
+   
 ### See Front in Browser 
