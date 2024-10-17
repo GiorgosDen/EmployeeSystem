@@ -25,16 +25,37 @@ This system has 3 parts: The front (user page), the back (APIs), and the databas
 ![](./EmployeeSystemPhotos/employeeSystemDB.png)
 ### Test Back in VS Code
 I have too many things to show from testing the back, but I will be trying to provide screenshots of the most important functions:
-For address localhost:3500/:
-1. Success Login (POST request)
 
-For address localhost:3500/homePage:
+### For address localhost:3500/:
+1. Success Login (POST request)
+   ![](./EmployeeSystemPhotos/testLoginAPI.png)
+   ! Explanation: When the username and password represent a user, the response has the access token, the username, and the role codes.
+### For address localhost:3500/homePage:
 1. Success Get Request (returns the employees)
+   ![](./EmployeeSystemPhotos/successGET.png)
+   ! Explanation: By using a valid access token, returned the data of employees
    
-3. Conflict Error (refers to PUT & POST Requests)
+2. Conflict Error (refers to PUT & POST Requests)
+   ![](./EmployeeSystemPhotos/conflictAFM.png)
+   ! Explanation: I'm trying to change the employee AFM to a bound (from other employee) AFM
    
-5. Unauthorized Error (refers to POST,  PUT,  DELETE Requests)
+3. Unauthorized Error (refers to POST,  PUT,  DELETE Requests)
+   ![](./EmployeeSystemPhotos/unautorizedADD.png)
+   ! Explanation: I'm trying to add a new employee as User, which don't has the authority to do that. If I had the code 3045 or 5021 (Assistant or Director code), then I would add the new employee
    
-7. Forbidden Error (refers to all Requests)
+4. Forbidden Error (refers to all Requests)
+   ![](./EmployeeSystemPhotos/expToken.png)
+   ! Explanation: I've connected for more than 2 minutes and my Access Token has expired. I must be logout and reconnect 
    
 ### See Front in Browser 
+Same with the back, I have many things to show, but I will be trying to provide screenshots of the most important functions/pages:
+1. Login Form
+   ![](./EmployeeSystemPhotos/
+   
+2. Main Page
+   ![](./EmployeeSystemPhotos/
+    
+3. Add Employee Form (The Update Form has the same design)
+   ![](./EmployeeSystemPhotos/
+4. Delete Error
+   ![](./EmployeeSystemPhotos/
