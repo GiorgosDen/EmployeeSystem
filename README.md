@@ -22,5 +22,6 @@ This system has 3 parts: The front (user page), the back (APIs), and the databas
 
 ## Photos
 ### Data Base Structure 
+![](./EmployeeSystemPhotos/employeeSystemDB.png)
 ### Test Back in VS Code
 ### See Front in Browser 
